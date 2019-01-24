@@ -13,8 +13,8 @@ public class Room {
     }
 
     public boolean decriseTemp() {
-        actuallTemp = actuallTemp - 1;
-        if (isThereKlima && actuallTemp >= minTemp) {
+        if (isThereKlima && actuallTemp > minTemp) {
+            actuallTemp = actuallTemp - 1;
             return true;
         } else {
             return false;
